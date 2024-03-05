@@ -1,7 +1,7 @@
 import bodyParser from "body-parser";
 import express from "express";
 import { BASE_ONION_ROUTER_PORT, BASE_USER_PORT, REGISTRY_PORT } from "../config";
-import { GetNodeRegistryBody, Node } from "@/src/registry/registry";
+import { Node } from "@/src/registry/registry";
 import { createRandomSymmetricKey, exportSymKey, importSymKey, rsaEncrypt, symEncrypt } from "../crypto";
 
 export type SendMessageBody = {
